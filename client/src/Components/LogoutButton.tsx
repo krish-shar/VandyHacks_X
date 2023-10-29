@@ -11,7 +11,7 @@ const LogoutButton = () => {
       onClick={() =>
         logout({
           logoutParams: {
-            returnTo: "https://pornhub.com/",
+            returnTo: "https://www.google.com/",
             client_id: "XKstvdcjCKBZgYFVGsgXwjkCcRbQvODK",
           },
         })
