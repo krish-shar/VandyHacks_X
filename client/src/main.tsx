@@ -3,16 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import '@emotion/react';
 import '@mui/material';
-<<<<<<< HEAD
-import './index.css'
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
-=======
 import { Auth0Provider } from "@auth0/auth0-react";
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -27,4 +19,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </Auth0Provider>
   </React.StrictMode>
 );
->>>>>>> SahitM
+
