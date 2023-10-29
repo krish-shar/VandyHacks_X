@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid'
 import LoginButton from './Components/LoginButton';
 import LogoutButton from './Components/LogoutButton';
 import Cam from "./Components/Camera.tsx";
+import PatientPage from "./Pages/PatientPage.tsx";
 
 export default function App() {
     return (
@@ -27,6 +28,9 @@ export default function App() {
            Hello world!
         </h1>
         <Cam />
+        <PatientPage />
       </Grid>
+      
+
     );
 }
