@@ -1,29 +1,15 @@
-import Doctor from "./Components/Doctor";
-import Relative from "./Components/Relative";
-import Patient from "./Components/Patient";
-import Grid from "@mui/material/Grid";
-import LoginButton from "./Components/LoginButton";
-import LogoutButton from "./Components/LogoutButton";
-
+import { useAuth0 } from "@auth0/auth0-react";
+import RoleSelection from "./Components/RoleSelection";
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
+  const { isAuthenticated } = useAuth0();
 
+  if (!isAuthenticated) return <RoleSelection />;
   return (
-    <Grid
-      container
-      justifyContent="center"
-      alignItems="center"
-      direction="column"
-      style={{ height: "100vh" }}
-    >
-      <h1>Who are you?</h1>
-      <Doctor />
-      <Relative />
-      <Patient />
-      <LoginButton></LoginButton>
-      <br></br>
-      <LogoutButton></LogoutButton>
-    </Grid>
+    <div>
+      <Dashboard />
+    </div>
   );
 }
 
