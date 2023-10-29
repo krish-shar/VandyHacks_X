@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import { useAuth0 } from "@auth0/auth0-react";
+
 import MedCards from "../Components/MedCards";
 
 import { collection, getDocs } from "firebase/firestore";
@@ -14,6 +15,7 @@ interface MedCard {
   interval: string;
   status: string;
 }
+
 
 function Dashboard() {
   const [cards, setCards] = useState<MedCard[]>([]);
@@ -56,12 +58,18 @@ function Dashboard() {
     );
   }
 
+
+  const medCards = medicine.map((med) => <MedCards name={med.name} dosage={med.dosage} frequency={med.frequency} interval={med.interval} taken={med.taken} status={med.status}/>)
+
+
+
   return (
     <main className="bg-gray-900 text-white min-h-screen">
       <Header />
       <section className="container mx-auto p-4">
         <h2 className="text-2xl font-bold">Your medicines!</h2>
         <p>Welcome, {user?.name}!</p>
+
 
         {cards.length > 0 && (
           <div className="py-2">
@@ -82,7 +90,9 @@ function Dashboard() {
             </div>
           </div>
         )}
+
       </section>
+      
     </main>
   );
 }

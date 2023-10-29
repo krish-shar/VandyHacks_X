@@ -6,6 +6,7 @@ interface ButtonProps {
     onClick: () => void;
     disabled?: boolean;
     outline?: boolean;
+    small?: boolean;
   }
   
   const RelativeButton: React.FC<ButtonProps> = ({ 
@@ -15,7 +16,8 @@ interface ButtonProps {
     onClick, 
     large, 
     disabled, 
-    outline 
+    outline,
+    small
   }) => {
     return ( 
       <button
@@ -30,12 +32,12 @@ interface ButtonProps {
           transition
           border-2
           ${fullWidth ? 'w-full' : 'w-fit'}
-          ${secondary ? 'bg-white' : 'bg-sky-500'}
+          ${secondary ? 'bg-white' : 'bg-sky-600'}
           ${secondary ? 'text-black' : 'text-white'}
-          ${secondary ? 'border-black' : 'border-sky-500'}
-          ${large ? 'text-xl' : 'text-md'}
-          ${large ? 'px-5' : 'px-4'}
-          ${large ? 'py-3' : 'py-2'}
+          ${secondary ? 'border-black' : 'border-sky-600'}
+          ${large ? 'text-xl' : small ? 'text-xs':'text-md'}
+          ${large ? 'px-5' : small ? 'px-3': 'px-4'}
+          ${large ? 'py-3' : small ? 'py-1': 'py-2'}
           ${outline ? 'bg-transparent' : ''}
           ${outline ? 'border-white' : ''}
           ${outline ? 'text-white' : ''}
