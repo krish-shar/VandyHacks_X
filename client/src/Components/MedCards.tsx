@@ -1,11 +1,15 @@
-import React from 'react';
-import {medicine} from '../Components/MockMedicine';
-import {Card, CardContent, Grid, Typography} from '@mui/material';
+import {Card, CardContent, Typography} from '@mui/material';
 
-export const MedCards = () => {
-    return (
-        <Grid container spacing={2}>
-            {medicine.map((med) => {
+interface MedProps {
+    name: string;
+    dosage: string;
+    frequency: string;
+    interval: string;
+    status: string;
+}
+
+function MedCards(med : MedProps) {
+    
                 return (
                     <Card>
                         <CardContent>
@@ -27,7 +31,5 @@ export const MedCards = () => {
                         </CardContent>
                     </Card>
                 );
-            })}
-        </Grid>
-    );
-};
+}
+export default MedCards;

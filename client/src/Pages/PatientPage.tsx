@@ -1,10 +1,16 @@
-import {MedCards} from '../Components/MedCards';
+import MedCards from '../Components/MedCards';
+import {medicine} from '../Components/MockMedicine';
+import {Grid} from '@mui/material';
+
 
 function PatientPage() {
+    const meds = medicine;
     return (
-        <div>
-            <MedCards />
-        </div>
+        <Grid container spacing={2}>
+            {meds.map((med) => (
+                <MedCards name={med.name} dosage={med.dosage} frequency={med.frequency} interval={med.interval} status={med.status} />
+            ))}
+        </Grid>
     );
 }
 
