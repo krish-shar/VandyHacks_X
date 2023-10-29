@@ -5,17 +5,17 @@ import os
 
 # load_dotenv()
 
-openai_api_key = os.environ['OPENAI_API_KEY']
-openai.api_key = openai_api_key
+# openai_api_key = os.environ['OPENAI_API_KEY']
+# openai.api_key = openai_api_key
 
 # openai.api_key = os.getenv("OPENAI_API_KEY")
-# openai.api_key = "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"
 
-st.set_page_config("MedWise Chatbot")
+
+st.set_page_config("MedVisor", page_icon=":pill:")
 
 # Centered title
 st.markdown(
-    "<h1 style='text-align: center;'>MedWise Chatbot</h1>",
+    "<h1 style='text-align: center;'>Medvisor</h1>",
     unsafe_allow_html=True
 )
 

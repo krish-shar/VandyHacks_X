@@ -1,43 +1,123 @@
 export const medicine = [
     {
-        name: "Paracetamol",
-        dosage: "500mg",
-        frequency: "3 times a day",
-        interval: "8 hours",
-        status: "Yellow",
-        taken: false
-    },
-    {
-        name: "Ibuprofen",
-        dosage: "400mg",
-        frequency: "2 times a day",
-        interval: "12 hours",
+        name: "Simvastatin",
+        dosage: "25mg",
+        frequency: "1 per day",
+        interval: "24 hours",
         status: "Green",
         taken: true
     },
     {
-        name: "Aspirin",
-        dosage: "500mg",
-        frequency: "Once a day",
+        name: "Donepezil",
+        dosage: "5mg",
+        frequency: "1 per day",
         interval: "24 hours",
+        status: "Yellow",
+        taken: false
+    },
+    {
+        name: "Rivastigmine",
+        dosage: "6mg",
+        frequency: "2 per day",
+        interval: "12 hours",
         status: "Red",
         taken: false
     },
     {
-        name: "Caffeine",
-        dosage: "100mg",
-        frequency: "Once a day",
-        interval: "N/A",
+        name: "Lisinopril",
+        dosage: "5mg",
+        frequency: "1 per day",
+        interval: "24 hours",
         status: "Green",
         taken: true
 
     },
     {
-        name: "Dextromethorphan",
-        dosage: "10mg",
-        frequency: "Once a day",
-        interval: "6 hours",
+        name: "Sectral",
+        dosage: "200mg",
+        frequency: "2 per day",
+        interval: "12 hours",
+        status: "Red",
+        taken: false
+    },
+    {
+        name: "Metoprolol",
+        dosage: "100mg",
+        frequency: "2 per day",
+        interval: "12 hours",
         status: "Green",
         taken: false
-    }
+    },
+    // {
+    //     name: "Atenolol",
+    //     dosage: "50mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: true
+    // },
+    // {
+    //     name: "Lorazepam",
+    //     dosage: "1mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: true
+    // },
+    // {
+    //     name: "Alprazolam",
+    //     dosage: "0.5mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: false
+    // },
+    // {
+    //     name: "Clonazepam",
+    //     dosage: "0.5mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: true
+    // },
+    // {
+    //     name: "Citalopram",
+    //     dosage: "20mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: false
+    // },
+    // {
+    //     name: "Sertraline",
+    //     dosage: "50mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: false
+    // },
+    // {
+    //     name: "Paroxetine",
+    //     dosage: "20mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: true
+    // },
+    // {
+    //     name: "Fluoxetine",
+    //     dosage: "20mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: false
+    // },
+    // {
+    //     name: "Escitalopram",
+    //     dosage: "10mg",
+    //     frequency: "1 per day",
+    //     interval: "24 hours",
+    //     status: "Green",
+    //     taken: false
+    // }
 ];
