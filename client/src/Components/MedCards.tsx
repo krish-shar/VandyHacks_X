@@ -1,3 +1,4 @@
+
 import RelativeButton from "./RelativeButton";
 import Statusbar from "./StatusBar";
 
@@ -57,5 +58,3 @@ function MedCards(med : MedProps) {
         </header>
 
     );
-}
-export default MedCards;
