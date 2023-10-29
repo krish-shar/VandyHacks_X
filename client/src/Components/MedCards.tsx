@@ -8,6 +8,7 @@ interface MedProps {
     status: string;
 }
 
+
 function MedCards(med : MedProps) {
     
                 return (
