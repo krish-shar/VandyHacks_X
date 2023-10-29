@@ -28,7 +28,7 @@ function MedCards(med : MedProps) {
             {med.name}
             </div>
 
-            <div className="text-xs">
+            <div className="text-xs ">
             <Statusbar label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" primaryColor={med.taken? "gray-500" :
                 med.status.toLowerCase() == "red" ? "red-500" : med.status.toLowerCase() == "yellow" ? "amber-400" : !(med.status.toLowerCase() == "gray")?"lime-700" : "gray-500"
                 } />
