@@ -1,12 +1,15 @@
 import openai
 import streamlit as st
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 openai_api_key = os.environ['OPENAI_API_KEY']
 openai.api_key = openai_api_key
+
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.api_key = "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"
 
 st.set_page_config("MedWise Chatbot")
 

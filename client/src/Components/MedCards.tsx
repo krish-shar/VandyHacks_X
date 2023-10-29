@@ -19,18 +19,18 @@ function MedCards(med : MedProps) {
 
 
     return (
+        
         <header className="bg-gray-700 border-primary/10 py-4 rounded-xl">
-
         <div className="flex flex-col px-4">
         <div>
         <div className="flex flex-row justify-between">
-            <div className="text-m bold text-center justify-center content-center ">
+            <div className="text-m bold text-center justify-center content-center  ">
             {med.name}
             </div>
 
             <div className="text-xs">
-            <Statusbar label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" primaryColor={
-                med.status.toLowerCase() == "red" ? "red-500" : med.status.toLowerCase() == "yellow" ? "amber-400" : "lime-700"
+            <Statusbar label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" primaryColor={med.taken? "gray-500" :
+                med.status.toLowerCase() == "red" ? "red-500" : med.status.toLowerCase() == "yellow" ? "amber-400" : !(med.status.toLowerCase() == "gray")?"lime-700" : "gray-500"
                 } />
             </div>
             </div>

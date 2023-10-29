@@ -25,6 +25,7 @@ async function checkDoseStatus(): Promise < DoseStatusResponse > {
 }
 
 function Dashboard() { 
+   
 
 
     const {user} = useAuth0();
@@ -78,7 +79,6 @@ function Dashboard() {
                     axios.get('http://localhost:8080/reset_dose');
                     setShowCamera(true);
                     setName(med.name);
-
                 }
             }/>
     ));
@@ -98,6 +98,7 @@ function Dashboard() {
         medicine.forEach((med) => {
             if (med.name === name) {
                 med.taken = true;
+                med.status = "gray";
             }
             
 
@@ -113,10 +114,8 @@ function Dashboard() {
                 <section className="container mx-auto p-4">
                     <h2 className="text-2xl font-bold">You have finished your medicine for today!!</h2>
                     <p>See you tomorrow!</p>
-                    <div className="relative">
+                    <div className="">
                       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-
-
 
                         <svg className="w-20 h-20 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                           <path fillRule="evenodd"
@@ -139,6 +138,7 @@ function Dashboard() {
                 <p>Welcome, {
                     user ?. name
                 }!</p>
+                <div className="flex flex-col justify-center align-bottom ">
 
                 <div>
                     <div className="bg-slate-800 rounded-xl p-4">
@@ -159,7 +159,15 @@ function Dashboard() {
                         </div>
 
                     )
-                } </div>
+                } 
+                <div className="flext flex-row justify-center">
+                
+</div>
+</div>
+                </div>
+
+
+
 
 
             </section>
