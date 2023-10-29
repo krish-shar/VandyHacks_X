@@ -10,7 +10,8 @@ const LogoutButton = () => {
       onClick={() =>
         logout({
           logoutParams: {
-            returnTo: "https://google.com",
+
+            returnTo: "https://www.google.com/",
             client_id: "XKstvdcjCKBZgYFVGsgXwjkCcRbQvODK",
           },
         })
